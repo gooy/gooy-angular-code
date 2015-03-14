@@ -1,0 +1,44 @@
+{
+  "name": "gooy-angular-code",
+  "namespace": "gooy",
+  "endpoint": "github",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gooy/gooy-angular-code.git"
+  },
+  "main": "src/code.js",
+  "directories": {
+    "lib": "src",
+    "build": "dist"
+  },
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "jshint src task test gulpfile.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.9.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "jshint": "^2.6.3",
+    "jshint-stylish": "^1.0.1",
+    "shell-task": "^1.0.0",
+    "deep-extend": "^0.3.2",
+    "requiredir": "^1.0.6"
+  },
+  "jspm": {
+    "main": "code.js",
+    "directories": {
+      "lib": "src"
+    },
+    "dependencies": {
+      "js-beautify": "npm:js-beautify@^1.5.5",
+      "prism": "github:PrismJS/prism@gh-pages"
+    }
+  }
+}
